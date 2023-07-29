@@ -6,7 +6,7 @@ import config
 
 st.title("ChatGPT-AI Bot ")
 
-openai.api_key = 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
+openai.api_key = "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"
 
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-3.5"
