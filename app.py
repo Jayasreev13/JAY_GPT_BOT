@@ -9,7 +9,7 @@ messages=[
     {"role": "system", "content": "You are a helpful assistant."}, 
 ]
 
-st.markdown("<h1 style='text-align: center; color: blue;'>Chat Bot Assistant </h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: blue;'>I am Jay! Your AI VideoBot </h1>", unsafe_allow_html=True)
 
 st.markdown("<h3 style='text-align: center; color: blue;'>Enter a prompt and let GPT-3 generate a response</h3>", unsafe_allow_html=True)
 
