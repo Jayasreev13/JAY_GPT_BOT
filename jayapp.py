@@ -44,7 +44,7 @@ if st.button("Submit", type="primary"):
     res_box = st.empty()
     if selected == "Streaming":
         report = []
-        for resp in openai.Completion.create(model='text-davinci-003',
+        for resp in openai.ChatCompletion.create(model='gpt-3.5',
                                             prompt=user_input,
                                             max_tokens=120, 
                                             temperature = 0.5,
@@ -60,7 +60,7 @@ if st.button("Submit", type="primary"):
                                                 
             
     else:
-        completions = openai.Completion.create(model='text-davinci-003',
+        completions = openai.ChatCompletion.create(model='gpt-3.5',
                                             prompt=user_input,
                                             max_tokens=120, 
                                             temperature = 0.5,
