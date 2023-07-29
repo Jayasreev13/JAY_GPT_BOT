@@ -16,8 +16,8 @@ def main():
     #st.image("jay_standgif.gif", width = 200)
     st.title("AI Videobot using GPT-3")
     st.header(" Start your Conversation with Jay!")
-if __name__ == '__main__':
-    main()
+#if __name__ == '__main__':
+    #main()
 
 st.markdown("<h3 style='text-align: center; color: blue;'>Enter a prompt and let GPT generate a response</h3>", unsafe_allow_html=True)
 
@@ -48,7 +48,6 @@ def chatbot():
         for message in messages:
             st.write(message["content"])
             st.audio(text_to_speech(system_response), format="audio/wav")
-            
-if __name__ == '__chatbot__':
-    chatbot()                     
+
+chatbot()                     
 
