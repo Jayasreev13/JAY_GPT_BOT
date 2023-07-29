@@ -1,9 +1,10 @@
 import streamlit as st
 import openai
+import config
 from gtts import gTTS  # new import
 from io import BytesIO  # new import
 
-openai.api_key = st.secrets["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"]
+openai.api_key = config.api_key
 
 messages=[ 
     {"role": "system", "content": "You are a helpful assistant."}, 
@@ -30,8 +31,8 @@ def chatbot():
         messages.append({"role": "user", "content": user_input})
     searchbutton = st.button("Search")
     if searchbutton:
-        response = openai.ChatCompletion.create(
-            model = 'gpt-3.5',
+        response = open.ChatCompletion.create(
+            model = 'gpt-3.5-turbo',
             messages = messages
         )
         system_response=response["choices"][0]["message"]["content"]
