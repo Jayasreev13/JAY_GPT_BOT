@@ -38,7 +38,7 @@ def chatbot():
         messages.append({"role": "user", "content": user_input})
     searchbutton = st.button("Search")
     if searchbutton:
-        response = open.ChatCompletion.create(
+        response = open.Completion.create(
             model = 'gpt-3.5-turbo',
             messages = messages
         )
