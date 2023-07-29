@@ -6,16 +6,6 @@ from io import BytesIO  # new import
 openai.api_key = "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"
 #messages=[ {"role": "system", "content": "You are a helpful assistant."},]
 
-# Streamlit Dashboard
-st.markdown("<h1 style='text-align: center; color: blue;'>I am Jay! Your AI VideoBot </h1>", unsafe_allow_html=True)
-#st.image("jay_standgif.gif", width = 200)
-st.title("AI Videobot using GPT-3")
-st.header(" Start your Conversation with Jay!")
-#st.markdown("<h3 style='text-align: center; color: blue;'>Enter a prompt and let GPT generate a response</h3>", unsafe_allow_html=True)
-chatbot()    
-
-
-
 def text_to_speech(text):
     """
     Converts text to an audio file using gTTS and returns the audio file as binary data
@@ -44,6 +34,12 @@ def chatbot():
         for message in messages:
             st.write(message["content"])
             st.audio(text_to_speech(system_response), format="audio/wav")
-
+# Streamlit Dashboard
+st.markdown("<h1 style='text-align: center; color: blue;'>I am Jay! Your AI VideoBot </h1>", unsafe_allow_html=True)
+#st.image("jay_standgif.gif", width = 200)
+st.title("AI Videobot using GPT-3")
+st.header(" Start your Conversation with Jay!")
+#st.markdown("<h3 style='text-align: center; color: blue;'>Enter a prompt and let GPT generate a response</h3>", unsafe_allow_html=True)
+chatbot() 
                  
 
