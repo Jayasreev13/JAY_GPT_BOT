@@ -13,7 +13,7 @@ st.markdown("<h1 style='text-align: center; color: blue;'>I am Jay! Your AI Vide
 
 def main():
     
-    st.image("jay_standgif.gif", width = 500)
+    st.image("jay_standgif.gif", width = 200)
     st.title("AI Videobot using GPT-3")
     st.header(" Start your Conversation with Jay!")   
 if __name__ == '__main__':
