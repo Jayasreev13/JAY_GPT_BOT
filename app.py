@@ -3,7 +3,7 @@ import openai
 from gtts import gTTS  # new import
 from io import BytesIO  # new import
 
-openai.api_key = "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"
+openai.api_key = "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"
 messages=[ {"role": "system", "content": "You are a helpful assistant."},]
 
 def text_to_speech(text):
