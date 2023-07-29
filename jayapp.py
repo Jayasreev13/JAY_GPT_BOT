@@ -62,7 +62,7 @@ if user_input:
     # store the output 
     st.session_state.past.append(user_input)
     st.session_state.generated.append(output)
-     st.audio(text_to_speech(system_response), format="audio/wav")
+    st.audio(text_to_speech(system_response), format="audio/wav")
 
 if st.session_state['generated']:
     
