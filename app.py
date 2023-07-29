@@ -30,8 +30,8 @@ def chatbot():
         )
         system_response=response["choices"][0]["message"]["content"]
         messages.append({"role": "system", "content": system_response})
-
-       for message in messages:
+        
+        for message in messages:
             st.write(message["content"]) 
         st.audio(text_to_speech(system_response), format="audio/wav")
 
