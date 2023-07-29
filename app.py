@@ -13,7 +13,7 @@ st.markdown("<h1 style='text-align: center; color: blue;'>I am Jay! Your AI Vide
 
 def main():
     
-    st.image("jay_standgif.gif", width = 200)
+    #st.image("jay_standgif.gif", width = 200)
     st.title("AI Videobot using GPT-3")
     st.header(" Start your Conversation with Jay!")   
 if __name__ == '__main__':
@@ -38,8 +38,8 @@ def chatbot():
         messages.append({"role": "user", "content": user_input})
     searchbutton = st.button("Search")
     if searchbutton:
-        response = open.Completion.create(
-            model = 'gpt-3.5-turbo',
+        response = open.ChatCompletion.create(
+            model = 'gpt-3.5',
             messages = messages
         )
         system_response=response["choices"][0]["message"]["content"]
