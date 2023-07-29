@@ -3,7 +3,7 @@ import openai
 from gtts import gTTS  # new import
 from io import BytesIO  # new import
 
-openai.api_key = st.secrets["api_key"]
+openai.api_key = st.secrets["sk-...mNH8"]
 
 messages=[ 
     {"role": "system", "content": "You are a helpful assistant."}, 
