@@ -3,6 +3,7 @@ import openai
 import config
 from gtts import gTTS  # new import
 from io import BytesIO  # new import
+from streamlit_chat import message
 
 openai.api_key = config.api_key
 
