@@ -1,9 +1,10 @@
 import openai
 import streamlit as st
+import config
 
 st.title("ChatGPT-AI Bot ")
 
-openai.api_key = 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
+openai.api_key = config.api_key
 
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-3.5"
