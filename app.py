@@ -9,18 +9,17 @@ openai.api_key = config.api_key
 messages=[ 
     {"role": "system", "content": "You are a helpful assistant."}, 
 ]
+st.markdown("<h1 style='text-align: center; color: blue;'>I am Jay! Your AI VideoBot </h1>", unsafe_allow_html=True)
 
 def main():
     
     st.image("jay_standgif.gif", width = 500)
     st.title("AI Videobot using GPT-3")
-    st.header(" Start your Conversation with Jay!")
-   
+    st.header(" Start your Conversation with Jay!")   
 if __name__ == '__main__':
     main()
-st.markdown("<h1 style='text-align: center; color: blue;'>I am Jay! Your AI VideoBot </h1>", unsafe_allow_html=True)
 
-st.markdown("<h3 style='text-align: center; color: blue;'>Enter a prompt and let GPT-3 generate a response</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; color: blue;'>Enter a prompt and let GPT generate a response</h3>", unsafe_allow_html=True)
 
 def text_to_speech(text):
     """
