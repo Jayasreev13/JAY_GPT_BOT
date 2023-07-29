@@ -1,9 +1,8 @@
 import openai
 import streamlit as st
-import config
 
-@st.cache_data
-st.title("ChatGPT-AI Bot ")
+
+st.title("ChatGPT-AI Bot")
 
 openai.api_key = "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"
 
