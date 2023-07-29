@@ -16,7 +16,6 @@ def main():
     #st.image("jay_standgif.gif", width = 200)
     st.title("AI Videobot using GPT-3")
     st.header(" Start your Conversation with Jay!")
-    chatbot()
 if __name__ == '__main__':
     main()
 
@@ -49,5 +48,6 @@ def chatbot():
         for message in messages:
             st.write(message["content"])
             st.audio(text_to_speech(system_response), format="audio/wav")
-                     
+if __name__ == '__chatbot__':
+    chatbot()                     
 
