@@ -4,7 +4,7 @@ from gtts import gTTS  # new import
 from io import BytesIO  # new import
 
 openai.api_key = "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"
-#messages=[ {"role": "system", "content": "You are a helpful assistant."},]
+messages=[ {"role": "system", "content": "You are a helpful assistant."},]
 
 def text_to_speech(text):
     """
@@ -17,8 +17,8 @@ def text_to_speech(text):
     return audio_bytes.read()
 
 def chatbot():
-    #global messages
-    messages=[ {"role": "system", "content": "You are a helpful assistant."},]
+    global messages
+    #messages=[ {"role": "system", "content": "You are a helpful assistant."},]
     user_input = st.text_input("Enter a prompt: ")
     if user_input:
         messages.append({"role": "user", "content": user_input})
