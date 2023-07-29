@@ -3,10 +3,10 @@ import streamlit as st
 
 st.title("ChatGPT- AI Chat Bot")
 
-openai.api_key ="dDkBR8l8hrcdG4zTJAGbT3BlbkFJyd3mbxQHlVYc1WeMqFA6"
+openai.api_key ="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"
 
 if "openai_model" not in st.session_state:
-    st.session_state["openai_model"] = "gpt-3.5-turbo"
+    st.session_state["openai_model"] = "gpt-3.5"
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
