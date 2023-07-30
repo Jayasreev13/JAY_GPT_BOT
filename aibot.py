@@ -4,7 +4,7 @@ from io import BytesIO  # new import
 st.title("Jay's AI Voice Bot")
 
 
-def text_to_speech(text):
+def text_to_speech(prompt):
     """
     Converts text to an audio file using gTTS and returns the audio file as binary data
     """
