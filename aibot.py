@@ -2,8 +2,9 @@ import streamlit as st
 from gtts import gTTS  # new import
 from io import BytesIO  # new import
 
+col1, col2 = st.columns(2, gap=small)
 st.title("Jay's AI Voice Bot")
-st.video("jay_ai_voicebot.mp4")
+col1.video("jay_ai_voicebot.mp4")
 
 def text_to_speech(response):
     """
