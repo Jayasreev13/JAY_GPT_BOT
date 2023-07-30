@@ -4,7 +4,7 @@ from io import BytesIO
 
 st.title("Jay's AI Speech Synthesizer")
 st.video('jay_ai_voicebot.mp4')
-st.image("jay_standgif.gif", width=300)
+
 
 #Converts text to an audio file using gTTS and returns the audio file as binary data
 def text_to_speech(response):    
