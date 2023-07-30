@@ -14,8 +14,6 @@ def text_to_speech(text):
     audio_bytes.seek(0)
     return audio_bytes.read()
 
-
-
 # Initialize chat history
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -39,3 +37,4 @@ if prompt := st.chat_input("What is up?"):
         st.audio(text_to_speech(system_response), format="audio/wav")
     # Add assistant response to chat history
     st.session_state.messages.append({"role": "assistant", "content": response})
+ 
