@@ -1,13 +1,14 @@
 import openai
 import streamlit as st
+
+
 # Streamlit Dashboard
 st.markdown("<h1 style='text-align: center; color: blue;'>I am Jay! Your AI VideoBot </h1>", unsafe_allow_html=True)
 st.video('jay_audio.mp4')
-st.caption('I am Jay! An AI Digital Human created using D-ID for So.evo'
+st.caption('I am Jay! An AI Digital Human created using D-ID for So.evo')
 st.title("Jay's AI Bot using ChatGPT")
 st.header("Start your Conversation with Jay!")
-#video_bytes = video_file.read(jay_audio.mp4)
-)
+
 
 openai.api_key = "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"
 
