@@ -1,7 +1,7 @@
 import streamlit as st
-
-st.title("AI Bot")
-
+from gtts import gTTS  # new import
+from io import BytesIO  # new import
+st.title("Jay's AI Voice Bot")
 
 
 def text_to_speech(text):
