@@ -2,10 +2,11 @@ import streamlit as st
 from gtts import gTTS  # new import
 from io import BytesIO  # new import
 
-col1, col2 = st.columns(2, gap=small)
-st.title("Jay's AI Voice Bot")
-col1.video("jay_ai_voicebot.mp4")
 
+st.title("Jay's AI Voice Bot")
+col1, col2 = st.columns(2, gap=small)
+col1.video("jay_ai_voicebot.mp4")
+col2.write("This is Jay")
 def text_to_speech(response):
     """
     Converts text to an audio file using gTTS and returns the audio file as binary data
