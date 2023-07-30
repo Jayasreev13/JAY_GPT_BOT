@@ -3,7 +3,7 @@ import streamlit as st
 
 
 # Streamlit Dashboard
-st.title("🔍I am Jay! Your AI HumanBot powered by ChatGPT")
+st.title("🔍I am Jay! AI Bot powered by ChatGPT")
 st.video('jay_audio.mp4')
 st.caption('I am Jay! An AI Digital Human created using D-ID for So.evo')
 st.header("Start your Conversation with Jay!")
