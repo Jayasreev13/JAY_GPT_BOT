@@ -4,12 +4,12 @@ from io import BytesIO  # new import
 st.title("Jay's AI Voice Bot")
 
 
-def text_to_speech(prompt):
+def text_to_speech(response):
     """
     Converts text to an audio file using gTTS and returns the audio file as binary data
     """
     audio_bytes = BytesIO()
-    tts = gTTS(text=prompt, lang="en")
+    tts = gTTS(text=response, lang="en")
     tts.write_to_fp(audio_bytes)
     audio_bytes.seek(0)
     return audio_bytes.read()
@@ -34,7 +34,7 @@ if prompt := st.chat_input("What is up?"):
     # Display assistant response in chat message container
     with st.chat_message("assistant"):
         st.markdown(response)
-        st.audio(text_to_speech(prompt), format="audio/wav")
+        st.audio(text_to_speech(response), format="audio/wav")
     # Add assistant response to chat history
     st.session_state.messages.append({"role": "assistant", "content": response})
  
