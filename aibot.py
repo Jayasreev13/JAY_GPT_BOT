@@ -9,7 +9,7 @@ def text_to_speech(prompt):
     Converts text to an audio file using gTTS and returns the audio file as binary data
     """
     audio_bytes = BytesIO()
-    tts = gTTS(text=text, lang="en")
+    tts = gTTS(text=prompt, lang="en")
     tts.write_to_fp(audio_bytes)
     audio_bytes.seek(0)
     return audio_bytes.read()
