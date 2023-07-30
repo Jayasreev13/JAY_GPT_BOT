@@ -3,7 +3,7 @@ import streamlit as st
 
 
 # Streamlit Dashboard
-st.markdown("<h1 style='text-align: center; color: blue;'>I am Jay! Your AI VideoBot </h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: blue;'>I am Jay! Your AI HumanBot powered by ChatGPT </h1>", unsafe_allow_html=True)
 st.video('jay_audio.mp4')
 st.caption('I am Jay! An AI Digital Human created using D-ID for So.evo')
 st.title("Jay's AI Bot using ChatGPT")
