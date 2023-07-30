@@ -10,7 +10,7 @@ st.title("Jay's AI Bot using ChatGPT")
 st.header("Start your Conversation with Jay!")
 
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-3.5"
