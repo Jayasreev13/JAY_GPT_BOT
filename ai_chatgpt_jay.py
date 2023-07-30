@@ -4,7 +4,7 @@ import streamlit as st
 
 st.title("ChatGPT-AI Bot")
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-3.5"
