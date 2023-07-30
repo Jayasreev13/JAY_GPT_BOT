@@ -3,10 +3,9 @@ import streamlit as st
 
 
 # Streamlit Dashboard
-st.markdown("<h2 style='text-align: center; color: blue;'>I am Jay! Your AI HumanBot powered by ChatGPT </h2>", unsafe_allow_html=True)
+st.title("🔍I am Jay! Your AI HumanBot powered by ChatGPT")
 st.video('jay_audio.mp4')
 st.caption('I am Jay! An AI Digital Human created using D-ID for So.evo')
-st.title("Jay's AI Bot using ChatGPT")
 st.header("Start your Conversation with Jay!")
 
 
