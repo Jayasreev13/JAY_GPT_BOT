@@ -3,7 +3,7 @@ import streamlit as st
 
 # Streamlit Dashboard
 st.markdown("<h1 style='text-align: center; color: blue;'>I am Jay! Your AI VideoBot </h1>", unsafe_allow_html=True)
-st.image("jay_standgif.gif", width = 200)
+st.image("jay_standgif.gif", width = 500)
 st.title("Jay's AI Bot using ChatGPT")
 st.header("Start your Conversation with Jay!")
 
