@@ -9,7 +9,7 @@ st.title("Jay's AI Bot using ChatGPT")
 st.header("Start your Conversation with Jay!")
 #video_bytes = video_file.read(jay_audio.mp4)
 with col2:
-st.video('jay_audio.mp4', width=300)
+st.video('jay_audio.mp4')
 st.caption("This Digital human AI Bot is created using D-ID for So.Evo")
 
 with col1:
