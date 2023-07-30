@@ -6,9 +6,7 @@ from io import BytesIO  # new import
 st.title("Jay's AI Voice Bot")
 st.video("jay_ai_voicebot.mp4")
 
-col1, col2 = st.columns(2)
-col1.video("jay_ai_voicebot.mp4")
-col2.write("This is Jay")
+
 
 def text_to_speech(response):
     """
