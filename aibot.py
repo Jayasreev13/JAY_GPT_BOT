@@ -34,7 +34,7 @@ if prompt := st.chat_input("What is up?"):
     # Display assistant response in chat message container
     with st.chat_message("assistant"):
         st.markdown(response)
-        st.audio(text_to_speech(response), format="audio/wav")
+        st.audio(text_to_speech(prompt), format="audio/wav")
     # Add assistant response to chat history
     st.session_state.messages.append({"role": "assistant", "content": response})
  
