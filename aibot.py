@@ -2,7 +2,7 @@ import streamlit as st
 from gtts import gTTS  
 from io import BytesIO  
 
-st.title("Jay's AI Speech Synthesizer")
+st.title("Jay's AI Speech Synthesizer(Text to Speech Bot)")
 st.video('jay_ai_voicebot.mp4')
 
 
