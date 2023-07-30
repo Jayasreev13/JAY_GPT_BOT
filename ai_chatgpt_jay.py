@@ -9,9 +9,6 @@ st.title("Jay's AI Bot using ChatGPT")
 st.header("Start your Conversation with Jay!")
 #video_bytes = video_file.read(jay_audio.mp4)
 
-with col1:
-    st.video('jay_audio.mp4')
-    st.caption("This Digital human AI Bot is created using D-ID for So.Evo")
 
 openai.api_key = "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"
 
@@ -45,3 +42,7 @@ if prompt := st.chat_input("What's up ?"):
             message_placeholder.markdown(full_response + "▌")
         message_placeholder.markdown(full_response)
     st.session_state.messages.append({"role": "assistant", "content": full_response})
+    
+with col1:
+    st.video('jay_audio.mp4')
+    st.caption("This Digital human AI Bot is created using D-ID for So.Evo")
