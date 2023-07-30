@@ -3,7 +3,7 @@ from gtts import gTTS  # new import
 from io import BytesIO  # new import
 
 st.title("Jay's AI Voice Bot")
-st.video('jay_ai_voicebot.mp4')
+st.video("jay_ai_voicebot.mp4")
 
 def text_to_speech(response):
     """
