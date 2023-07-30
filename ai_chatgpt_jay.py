@@ -7,7 +7,7 @@ st.markdown("<h1 style='text-align: center; color: blue;'>I am Jay! Your AI Vide
 st.title("Jay's AI Bot using ChatGPT")
 st.header("Start your Conversation with Jay!")
 #video_bytes = video_file.read(jay_audio.mp4)
-st.video('jay_audio.mp4')
+st.video('jay_audio.mp4', width=300)
 
 openai.api_key = "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"
 
