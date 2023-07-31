@@ -6,9 +6,9 @@ Before trying these applications, create your streamlit account using the link h
 
 # Steps to implement the AI application "Speech Synthesizer(Text to Speech App)" in Streamlit
 
-Step 1: Open the Python file named "aibot.py".
-Step 2: Copy the GitHub URL 
-Step 3: Open your account page in streamlit and Click the "New App" Icon.
+# Step 1: Open the Python file named "aibot.py".
+# Step 2: Copy the GitHub URL 
+# Step 3: Open your account page in streamlit and Click the "New App" Icon.
 Step 4: Click the "paste GitHub URL" Icon.
 Step 5: Now, paste the GitHub URL copied by you.
 Step 6: Click Deploy.
