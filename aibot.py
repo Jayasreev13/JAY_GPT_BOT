@@ -3,7 +3,8 @@ from gtts import gTTS
 from io import BytesIO  
 
 st.title("Jay's AI Speech Synthesizer(Text to Speech Bot)")
-
+st.video('jay_ai_voicebot.mp4')
+st.header(" Type your text to hear what you say!")
 
 #Converts text to an audio file using gTTS and returns the audio file as binary data
 def text_to_speech(response):    
@@ -37,4 +38,4 @@ if prompt := st.chat_input("What is up?"):
     # Add assistant response to chat history
     st.session_state.messages.append({"role": "assistant", "content": response})
     
-st.video('jay_ai_voicebot.mp4')
+
