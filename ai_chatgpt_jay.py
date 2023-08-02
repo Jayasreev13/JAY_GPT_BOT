@@ -9,7 +9,7 @@ st.caption('I am Jay! An AI Digital Human created using D-ID for So.evo')
 st.header("Start your Conversation with Jay!")
 
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-3.5"
