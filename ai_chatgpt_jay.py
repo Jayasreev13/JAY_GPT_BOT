@@ -2,6 +2,8 @@ import openai
 import streamlit as st
 
 
+openai.api_key = "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"
+
 # Streamlit Dashboard
 st.title("🔍I am Jay! AI Bot powered by ChatGPT")
 st.video('jay_audio.mp4')
